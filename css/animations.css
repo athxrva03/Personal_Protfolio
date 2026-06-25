@@ -1,0 +1,444 @@
+/* =====================================
+   GLOBAL ANIMATIONS
+===================================== */
+
+*{
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+/* =====================================
+   FADE IN UP
+===================================== */
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =====================================
+   FADE IN LEFT
+===================================== */
+
+@keyframes fadeInLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* =====================================
+   FADE IN RIGHT
+===================================== */
+
+@keyframes fadeInRight{
+
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* =====================================
+   FLOATING PROFILE IMAGE
+===================================== */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.hero-right img{
+
+    animation:
+        floating 4s ease-in-out infinite;
+}
+
+/* =====================================
+   HERO ANIMATION
+===================================== */
+
+.hero-left{
+
+    animation:
+        fadeInLeft 1s ease forwards;
+}
+
+.hero-right{
+
+    animation:
+        fadeInRight 1s ease forwards;
+}
+
+/* =====================================
+   TYPING CURSOR
+===================================== */
+
+#typing::after{
+
+    content:"|";
+
+    margin-left:4px;
+
+    animation:
+        blink .8s infinite;
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
+}
+
+/* =====================================
+   GRADIENT TEXT
+===================================== */
+
+.hero-left h1{
+
+    background:
+    linear-gradient(
+        90deg,
+        #38bdf8,
+        #06b6d4,
+        #8b5cf6
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:
+        gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0%;
+    }
+
+    50%{
+        background-position:100%;
+    }
+
+    100%{
+        background-position:0%;
+    }
+
+}
+
+/* =====================================
+   PROJECT CARD EFFECT
+===================================== */
+
+.project-card{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-100%;
+
+    width:250%;
+
+    height:250%;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0),
+        rgba(255,255,255,.08),
+        rgba(255,255,255,0)
+    );
+
+    transform:rotate(45deg);
+
+    transition:.8s;
+}
+
+.project-card:hover::before{
+
+    top:100%;
+    left:100%;
+}
+
+.project-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 40px rgba(56,189,248,.25);
+}
+
+/* =====================================
+   SKILL CARD EFFECT
+===================================== */
+
+.skills-grid div:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.05);
+
+    box-shadow:
+        0 8px 25px rgba(56,189,248,.25);
+}
+
+/* =====================================
+   CERTIFICATE CARD
+===================================== */
+
+.certificate-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(56,189,248,.25);
+}
+
+/* =====================================
+   TIMELINE CARD
+===================================== */
+
+.timeline-item:hover{
+
+    transform:
+        translateX(10px);
+}
+
+/* =====================================
+   STAT CARD EFFECT
+===================================== */
+
+.stat-card:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 35px rgba(56,189,248,.25);
+}
+
+/* =====================================
+   BUTTON SHINE EFFECT
+===================================== */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:80px;
+
+    height:100%;
+
+    background:
+    rgba(255,255,255,.25);
+
+    transform:skewX(-20deg);
+
+    transition:.7s;
+}
+
+.btn:hover::before{
+
+    left:130%;
+}
+
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+
+.social-links a{
+
+    transition:.3s;
+}
+
+.social-links a:hover{
+
+    color:#38bdf8;
+
+    transform:
+        translateY(-5px)
+        scale(1.2);
+}
+
+/* =====================================
+   SECTION TITLE EFFECT
+===================================== */
+
+.section-title{
+
+    position:relative;
+
+    display:inline-block;
+
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+.section-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-10px;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:#38bdf8;
+
+    transition:.5s;
+}
+
+.section-title:hover::after{
+
+    width:100%;
+}
+
+/* =====================================
+   CONTACT BUTTON
+===================================== */
+
+#contact-form button:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(56,189,248,.35);
+}
+
+/* =====================================
+   MODAL ANIMATION
+===================================== */
+
+.modal-content{
+
+    animation:
+        modalPop .4s ease;
+}
+
+@keyframes modalPop{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+
+    }
+
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#38bdf8;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0ea5e9;
+}

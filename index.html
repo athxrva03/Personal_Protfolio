@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Rathore | Portfolio</title>
+    <meta name="description" content="Atharva Rathore Portfolio - Software Developer, AI Enthusiast, Java Developer">
+    <meta name="keywords" content="Atharva Rathore, Portfolio, Java Developer, AI, Machine Learning, Web Developer">
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+    <!-- PARTICLES -->
+    <div id="particles-js"></div>
+
+    <!-- PROJECT MODAL -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">
+                &times;
+            </span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <h4>
+                Tech Stack
+            </h4>
+            <p id="modalTech"></p>
+            <div class="modal-buttons">
+                <a id="modalGithub" target="_blank" class="btn">
+
+                    GitHub
+
+                </a>
+
+                <a id="modalDemo" target="_blank" class="btn btn-outline">
+
+                    Live Demo
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Atharva Rathore
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#certifications">Certifications</a></li>
+
+                <li><a href="#research">Research</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <button id="themeToggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="hamburger">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-left">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Atharva Rathore</h1>
+
+            <h2>
+                I'm a
+                <span id="typing"></span>
+            </h2>
+
+            <p>
+
+                Passionate about Software Development,
+                Artificial Intelligence, Machine Learning,
+                and solving real-world problems through technology.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+                <a href="assets/RESUME_ATHARVA_RATHORE.pdf" class="btn btn-outline">
+
+                    Download Resume
+
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/athxrva03">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/atharva-rathore-9135362a2/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://leetcode.com/u/athxrva03/">
+                    <i class="fas fa-code"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img src="assets/picture.png" alt="Profile Image">
+
+        </div>
+
+    </section>
+
+    <!-- ACHIEVEMENT COUNTERS -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h2>20+</h2>
+
+            <p>DSA Problems</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>3+</h2>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>3+</h2>
+
+            <p>Major Applications</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>2027</h2>
+
+            <p>Graduation</p>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about" data-aos="fade-up">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <p>
+
+            I am a Information Technology student passionate about
+            Web Development, Artificial Intelligence,
+            Machine Learning, and Data Structures & Algorithms.
+
+            I enjoy creating scalable applications
+            and solving practical problems using technology.
+
+        </p>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills" data-aos="zoom-in">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="skills-grid">
+
+            <div>Java</div>
+            <div>Python</div>
+            <div>JavaScript</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>SQL</div>
+            <div>Spring Boot</div>
+            <div>Flask</div>
+            <div>Git</div>
+            <div>GitHub</div>
+            <div>Machine Learning</div>
+            <div>DSA</div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects" data-aos="fade-up">
+
+        <h2 class="section-title">
+            Featured Projects
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-card" data-title="Smart Greenhouse System"
+                data-description="An IoT-based greenhouse automation system that monitors temperature, humidity, soil moisture, and controls irrigation automatically."
+                data-tech="Arduino, IoT, Sensors, JavaScript" data-github="https://github.com/yourusername/greenhouse"
+                data-demo="#">
+
+                <img src="assets/projects/diarisk.png">
+
+                <h3>Smart Greenhouse System</h3>
+
+                <p>
+                    IoT-based greenhouse automation.
+                </p>
+
+            </div>
+
+            <div class="project-card" data-title="ScholarHub"
+                data-description="A scholarship discovery and management platform helping students find and apply for scholarships."
+                data-tech="HTML, CSS, JavaScript, MySQL" data-github="https://github.com/yourusername/scholarhub"
+                data-demo="#">
+
+                <img src="assets/projects/diarisk.png">
+
+                <h3>ScholarHub</h3>
+
+                <p>
+                    Scholarship management platform.
+                </p>
+
+            </div>
+
+            <div class="project-card" data-title="DiaPortal"
+                data-description="AI-powered diabetes risk prediction portal using Machine Learning algorithms."
+                data-tech="Python, Flask, XGBoost, HTML, CSS" data-github="https://github.com/yourusername/diaportal"
+                data-demo="#">
+
+                <img src="assets/projects/diarisk.png">
+
+                <h3>DiaPortal</h3>
+
+                <p>
+                    AI-powered diabetes prediction portal.
+                </p>
+
+            </div>
+
+            <div class="project-card" data-title="School Website"
+                data-description="Responsive school website with gallery, admission enquiry, and information system."
+                data-tech="HTML, CSS, JavaScript" data-github="https://github.com/yourusername/schoolwebsite"
+                data-demo="#">
+
+                <img src="assets/projects/diarisk.png">
+
+                <h3>School Website</h3>
+
+                <p>
+                    Responsive educational website.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GITHUB -->
+
+    <section id="github">
+
+        <h2 class="section-title">
+            GitHub Statistics
+        </h2>
+
+        <div id="githubData">
+
+            Loading GitHub Data...
+
+        </div>
+
+    </section>
+
+    <!-- LEETCODE -->
+
+    <section id="leetcode">
+
+        <h2 class="section-title">
+            Coding Progress
+        </h2>
+
+        <img src="https://leetcard.jacoblin.cool/athxrva03?theme=dark&font=Poppins&ext=contest">
+
+    </section>
+
+    <!-- CERTIFICATIONS -->
+
+    <section id="certifications" data-aos="fade-up">
+
+        <h2 class="section-title">
+            Certifications
+        </h2>
+
+        <div class="certificate-grid">
+
+            <!-- Java -->
+
+            <div class="certificate-card">
+
+                <img src="assets/certificates/java.png" alt="Java Certificate">
+
+                <div class="certificate-info">
+
+                    <h3>Java Programming</h3>
+
+                    <p>
+                        Core Java Programming Concepts
+                    </p>
+
+                    <span class="issuer">
+                        Issuer: NPTEL
+                    </span>
+
+                    <div class="certificate-actions">
+
+                        <a href="#" target="_blank" class="btn">
+                            Verify
+                        </a>
+
+                        <button class="btn btn-outline preview-btn" data-image="assets/certificates/java.png">
+
+                            Preview
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- OS -->
+
+            <div class="certificate-card">
+
+                <img src="assets/certificates/os.png" alt="OS Certificate">
+
+                <div class="certificate-info">
+
+                    <h3>Operating Systems</h3>
+
+                    <p>
+                        Process Management, Memory Management
+                    </p>
+
+                    <span class="issuer">
+                        Issuer: NPTEL
+                    </span>
+
+                    <div class="certificate-actions">
+
+                        <a href="#" target="_blank" class="btn">
+                            Verify
+                        </a>
+
+                        <button class="btn btn-outline preview-btn" data-image="assets/certificates/os.png">
+
+                            Preview
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- NVIDIA -->
+
+            <div class="certificate-card">
+
+                <img src="assets/certificates/dl.png" alt="Deep Learning Certificate">
+
+                <div class="certificate-info">
+
+                    <h3>NVIDIA Deep Learning</h3>
+
+                    <p>
+                        Deep Learning Fundamentals
+                    </p>
+
+                    <span class="issuer">
+                        Issuer: NVIDIA
+                    </span>
+
+                    <div class="certificate-actions">
+
+                        <a href="#" target="_blank" class="btn">
+                            Verify
+                        </a>
+
+                        <button class="btn btn-outline preview-btn" data-image="assets/certificates/dl.png">
+
+                            Preview
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- AI -->
+
+            <div class="certificate-card">
+
+                <img src="assets/certificates/aiupskill.png" alt="AI Upskilling Certificate">
+
+                <div class="certificate-info">
+
+                    <h3>AI Upskilling</h3>
+
+                    <p>
+                        Artificial Intelligence Concepts
+                    </p>
+
+                    <span class="issuer">
+                        Issuer: Qualcomm
+                    </span>
+
+                    <div class="certificate-actions">
+
+                        <a href="#" target="_blank" class="btn">
+                            Verify
+                        </a>
+
+                        <button class="btn btn-outline preview-btn" data-image="assets/certificates/aiupskill.png">
+
+                            Preview
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- AWS -->
+
+            <div class="certificate-card">
+
+                <img src="assets/certificates/aws.png" alt="Solution Architect Certificate">
+
+                <div class="certificate-info">
+
+                    <h3>AWS Solutions Architect</h3>
+
+                    <p>
+                        Cloud Architecture & Services
+                    </p>
+
+                    <span class="issuer">
+                        Issuer: Amazon AWS
+                    </span>
+
+                    <div class="certificate-actions">
+
+                        <a href="#" target="_blank" class="btn">
+                            Verify
+                        </a>
+
+                        <button class="btn btn-outline preview-btn" data-image="assets/certificates/aws.png">
+
+                            Preview
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+    <!-- TIMELINE -->
+    <section id="timeline" data-aos="fade-up">
+
+        <h2 class="section-title">
+            Education & Experience
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2023
+                    </span>
+
+                    <h3>
+                        Started B.Tech Information Technology
+                    </h3>
+
+                    <p>
+                        Began my journey in Information Technology,
+                        focusing on programming fundamentals,
+                        problem-solving, and software development.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2024
+                    </span>
+
+                    <h3>
+                        Smart Greenhouse System
+                    </h3>
+
+                    <p>
+                        Developed an IoT-based greenhouse monitoring
+                        system with automated irrigation and sensor
+                        integration.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2025
+                    </span>
+
+                    <h3>
+                        ScholarHub Platform
+                    </h3>
+
+                    <p>
+                        Designed and developed a scholarship
+                        management platform to help students
+                        discover and apply for opportunities.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2026
+                    </span>
+
+                    <h3>
+                        DiaPortal Research Project
+                    </h3>
+
+                    <p>
+                        Built an AI-powered diabetes risk prediction
+                        system using Machine Learning techniques and
+                        research methodologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2027
+                    </span>
+
+                    <h3>
+                        Placement & Software Engineering Career
+                    </h3>
+
+                    <p>
+                        Preparing for software engineering roles
+                        with strong expertise in Java, Spring Boot,
+                        DSA, and AI-powered applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> <!-- RESEARCH -->
+
+    <section id="research">
+
+        <h2 class="section-title">
+            Research Work
+        </h2>
+
+        <div class="research-card">
+
+            <h3>
+                AI-Powered Diabetes Risk Prediction Using
+                Machine Learning Techniques
+            </h3>
+
+            <p>
+
+                Research focused on applying machine learning
+                algorithms for early diabetes prediction.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" data-aos="fade-up">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <form id="contact-form">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" placeholder="Your Message" required>
+    </textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="form-status"></p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Atharva Rathore.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <div id="certificateModal" class="modal">
+
+        <div class="modal-content certificate-modal">
+
+            <span id="closeCertificateModal">
+
+                &times;
+
+            </span>
+
+            <img id="certificatePreviewImage" src="" alt="Certificate Preview">
+
+        </div>
+
+    </div>
+
+
+    <!-- Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/certificate-modal.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+/* ===================================
+   THEME TRANSITIONS
+=================================== */
+
+body,
+header,
+nav,
+section,
+footer,
+.project-card,
+.stat-card,
+.certificate-card,
+.timeline-item,
+.research-card,
+.modal-content,
+input,
+textarea,
+button,
+.skills-grid div,
+#githubData {
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+/* ===================================
+   LIGHT THEME VARIABLES
+=================================== */
+
+body.light-theme {
+
+    --bg: #f8fafc;
+
+    --bg-secondary: #ffffff;
+
+    --card-bg: rgba(255,255,255,0.9);
+
+    --text: #0f172a;
+
+    --text-secondary: #475569;
+
+    --border: rgba(15,23,42,0.12);
+
+    --shadow:
+        0 8px 30px rgba(15,23,42,0.08);
+}
+
+/* ===================================
+   BODY
+=================================== */
+
+body.light-theme {
+
+    background: var(--bg);
+
+    color: var(--text);
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+body.light-theme header {
+
+    background:
+        rgba(255,255,255,0.8);
+
+    border-bottom:
+        1px solid rgba(15,23,42,0.08);
+}
+
+body.light-theme .logo {
+
+    color: var(--primary);
+}
+
+body.light-theme .nav-links a {
+
+    color: var(--text);
+}
+
+body.light-theme .nav-links a:hover {
+
+    color: var(--primary);
+}
+
+body.light-theme .hamburger span {
+
+    background: var(--text);
+}
+
+body.light-theme #themeToggle {
+
+    color: var(--text);
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+body.light-theme .hero-left p {
+
+    color: var(--text-secondary);
+}
+
+body.light-theme .hero-right img {
+
+    box-shadow:
+        0 0 35px rgba(56,189,248,.25);
+}
+
+/* ===================================
+   BUTTONS
+=================================== */
+
+body.light-theme .btn {
+
+    color: white;
+}
+
+body.light-theme .btn-outline {
+
+    color: var(--primary);
+}
+
+body.light-theme .btn-outline:hover {
+
+    background: var(--primary);
+
+    color: white;
+}
+
+/* ===================================
+   SOCIAL ICONS
+=================================== */
+
+body.light-theme .social-links a {
+
+    color: var(--text);
+}
+
+body.light-theme .social-links a:hover {
+
+    color: var(--primary);
+}
+
+/* ===================================
+   GLASS CARDS
+=================================== */
+
+body.light-theme .project-card,
+body.light-theme .stat-card,
+body.light-theme .certificate-card,
+body.light-theme .timeline-item,
+body.light-theme .research-card,
+body.light-theme #githubData {
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow);
+}
+
+/* ===================================
+   SKILLS
+=================================== */
+
+body.light-theme .skills-grid div {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+}
+
+body.light-theme .skills-grid div:hover {
+
+    color: var(--primary);
+}
+
+/* ===================================
+   PROJECTS
+=================================== */
+
+body.light-theme .project-card p {
+
+    color: var(--text-secondary);
+}
+
+/* ===================================
+   TIMELINE
+=================================== */
+
+body.light-theme .timeline::before {
+
+    background: var(--primary);
+}
+
+/* ===================================
+   CONTACT FORM
+=================================== */
+
+body.light-theme #contact-form input,
+body.light-theme #contact-form textarea {
+
+    background: white;
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+}
+
+body.light-theme #contact-form input::placeholder,
+body.light-theme #contact-form textarea::placeholder {
+
+    color: #64748b;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+body.light-theme footer {
+
+    background: white;
+
+    border-top:
+        1px solid rgba(15,23,42,0.08);
+}
+
+/* ===================================
+   MODAL
+=================================== */
+
+body.light-theme .modal-content {
+
+    background: white;
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+}
+
+body.light-theme #closeModal {
+
+    color: var(--text);
+}
+
+/* ===================================
+   LEETCODE CARD
+=================================== */
+
+body.light-theme #leetcode img {
+
+    filter:
+        drop-shadow(
+            0 8px 20px rgba(0,0,0,.08)
+        );
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+body.light-theme::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+body.light-theme::-webkit-scrollbar-track {
+
+    background: #e2e8f0;
+}
+
+body.light-theme::-webkit-scrollbar-thumb {
+
+    background: #94a3b8;
+
+    border-radius: 20px;
+}
+
+body.light-theme::-webkit-scrollbar-thumb:hover {
+
+    background: #64748b;
+}
+
+body.light-theme .nav-links{
+
+    background:white;
+}
+
+body.light-theme #particles-js{
+
+    background:
+    linear-gradient(
+        135deg,
+        #f8fafc,
+        #ffffff,
+        #e2e8f0
+    );
+}
